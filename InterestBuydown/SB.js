@@ -1,10 +1,4 @@
-var consoleLine = "<p class=\"console-line\"></p>";
  
-console = {
-    log: function (text) {
-        $("#console-log").append($(consoleLine).html(text));
-    }
-};
  
 var principalBalance = 250000; //f5
 var currentSprRate = 5.8500;//f6
@@ -76,7 +70,5 @@ function calcPresentValueLoan2(){ //f180
 function calcInterestRateBuydown(){ //e195      
     return calcPresentValueOfLoan() - calcPresentValueLoan2()+penalty;    
 }
-var xa = calcInterestRateBuydown();
-console.log(xa);
  
 
